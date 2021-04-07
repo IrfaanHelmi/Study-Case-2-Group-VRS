@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      VENUE RESERVATION SYSTEM
+    </title>
+    <link href="styleres.css" rel="stylesheet">
+    </script>
+  </head>
+  <body>
+
+
+    <!-- (B) RESERVATION FORM -->
+    <h1>VENUE RESERVATION</h1>
+    <form id="res_php" method="post">
+      <label for="res_name">Name :</label>
+      <input type="text" required name="name" placeholder="Enter your name"/>
+      <label for="res_email">Email :</label>
+      <input type="email" required name="email" placeholder="Enter a valid e-mail"/>
+      <label for="mobile">Mobile no: </label>
+      <input type="text" required name="phone" placeholder="123-45-678"/>
+      <label>Venue Selection :</label>
+      <select name="slot">
+        <option value="Hall1">Hall1</option>
+        <option value="Hall2">Hall2</option>
+        <option value="Hall3">Hall3</option>
+        <option value="Hall4">Hall4</option>
+        <option value="Hall5">Hall5</option>
+        <option value="Hall6">Hall6</option>
+        <option value="Hall7">Hall7</option>
+        <option value="Hall8">Hall8</option>
+        <option value="Hall9">Hall9</option>
+        <option value="Hall10">Hall10</option>
+        <option value="conference room A">conferenceA</option>
+        <option value="conferenceb">conferenceB</option>
+        <option value="conferenceC">conferenceC</option>
+        <option value="conferenceD">conferenceD</option>
+        <option value="conferenceE">conferenceE</option>
+        <option value="Room01">Room01</option>
+        <option value="Room02">Room02</option>
+        <option value="Room03">Room03</option>
+        <option value="Room04">Room04</option>
+        <option value="Room05">Room05</option>
+        <option value="Room06">Room06</option>
+        <option value="Room07">Room07</option>
+        <option value="Room08">Room08</option>
+        <option value="Room09">Room09</option>
+        <option value="Room10">Room10</option>
+        <option value="Room11">Room11</option>
+        <option value="Room12">Room12</option>
+        <option value="Room13">Room13</option>
+        <option value="Room14">Room14</option>
+        <option value="Room15">Room15</option>
+      </select>
+      <label>Reservation Date :</label>
+      <input type="date" required id="res_date" name="date" value="<?=date("Y-m-d")?>
+      <label for="duration">Duration : </label>
+      <input type="text" name="time"  placeholder="Open from 8am to 11pm"/>
+
+      <input type="submit" value="Submit"/>
+      <input type="reset" value="reset"/>
+
+    </form>
+  </body>
+</html>
